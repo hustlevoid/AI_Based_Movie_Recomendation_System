@@ -85,6 +85,6 @@ def main():
     for count, (movie_score, movie) in enumerate(recommendations[:3], start=1):
       print(f"{count}. {movie['title']} ({movie['year']}) - Score {movie_score}")
       print("   " + greason(movie, favorite, cmovie))
-      1print("   " + movie["story"])
+      print("   " + movie["story"])
 if __name__ == "__main__":
     main()
