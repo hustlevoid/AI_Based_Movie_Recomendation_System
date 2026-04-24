@@ -82,9 +82,9 @@ def main():
             recommendations.append((score(movie, profile), movie))
     recommendations.sort(key=lambda item: item[0], reverse=True)
     print(f"\nTop recommendations for {username}:\n")
-    for count, (score, movie) in enumerate(recommendations[:3], start=1):
-        print(f"{count}. {movie['title']} ({movie['year']}) - Score {score}")
-        print("   " + greason(movie, favorite, cmovie))
-        print("   " + movie["story"])
+    for count, (movie_score, movie) in enumerate(recommendations[:3], start=1):
+      print(f"{count}. {movie['title']} ({movie['year']}) - Score {movie_score}")
+      print("   " + greason(movie, favorite, cmovie))
+      1print("   " + movie["story"])
 if __name__ == "__main__":
     main()
